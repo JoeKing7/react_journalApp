@@ -1,0 +1,231 @@
+.auth_main {
+    background: white;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $gradient3 $gradient4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, $gradient3, $gradient4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F44336;
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+.auth_main .color {
+    position: absolute;
+    filter: blur(150px);
+}
+
+.auth_main .color:nth-child(1) {
+    top: -350px;
+    width: 600px;
+    height: 600px;
+    background: $gradient1;
+}
+
+.auth_main .color:nth-child(2) {
+    bottom: -150px;
+    left: 100px;
+    width: 500px;
+    height: 500px;
+    background: $gradient2;
+}
+
+.auth_main .color:nth-child(3) {
+    bottom: 50px;
+    right: 170px;
+    width: 300px;
+    height: 300px;
+    background: $light-orange;
+}
+
+// .auth_box-container {
+//     background-color: white;
+//     box-shadow: 0px 3px $dark-gray;
+//     border-radius: 2px;
+//     padding: 20px;
+//     width: 250px;
+// }
+
+.auth_box {
+    position: relative;
+}
+
+.auth_box .auth_square {
+    position: absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px, solid rgba(255, 255, 255, 0.5);
+    border-right: 1px, solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px, solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    animation: animate 10s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+}
+
+@keyframes animate {
+    0%, 100% {
+        transform: translateY(-40px);
+    }
+    50% {
+        transform: translateY(40px);
+    }
+}
+.auth_box .auth_square:nth-child(1) {
+    top: -50px;
+    right: -60px;
+    width: 100px;
+    height: 100px;
+}
+
+.auth_box .auth_square:nth-child(2) {
+    top: 150px;
+    left: -100px;
+    width: 120px;
+    height: 120px;
+    z-index: 2;
+}
+
+.auth_box .auth_square:nth-child(3) {
+    bottom: 50px;
+    right: -60px;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+}
+
+.auth_box .auth_square:nth-child(4) {
+    bottom: -80px;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+.auth_box .auth_square:nth-child(5) {
+    top: -80px;
+    left: 140px;
+    width: 60px;
+    height: 60px;
+}
+
+.auth_container {
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.auht_form {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+
+.auht_form h1 {
+    position: relative;
+    color: $primary;
+    font-size: 24px;
+    font-weight: 600px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.auht_form h1::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background: $primary;
+}
+
+.auht_form .auth_inputBox {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.auht_form .auth_button {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.auht_form .auth_inputBox input {
+    width: 87%;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: $light-orange;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+.auth_button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.auht_form .auth_button button {
+    // width: 100%;
+    color: $light-orange;
+    max-width: auto;
+    margin-bottom: 20px;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.auth_googleImg {
+    width: 16px;
+    border: 1px;
+    margin-bottom: -3px;
+    margin-right: 5px;
+}
+
+.auht_form .auth_inputBox input::placeholder {
+    color: $light-orange;
+}
+
+.forget {
+    color: $gradient1;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.forget a  {
+    color:  $light-orange;
+    font-weight: 200;
+}
+
+.auth_alert-error {
+    background-color: #F44336;
+    color: wheat;
+    text-align: center;
+}

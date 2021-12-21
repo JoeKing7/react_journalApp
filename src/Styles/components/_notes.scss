@@ -1,0 +1,48 @@
+.notes_main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.notes_appbar {
+    align-items: center;
+    color: $primary;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+}
+
+.notes_content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+}
+
+.notes_title-input, .notes_textarea {
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.notes_title-input {
+    color: $dark-gray;
+    font-size: 25px;
+    font-weight: 700px;
+    margin-bottom: 10px;
+}
+
+.notes_textarea {
+    border: none;
+    color: $dark-gray;
+    font-size: 18px;
+    flex: 1 1 auto;
+    resize: none;
+}
+
+.notes_image {
+    width: 150px;
+    height: 150px;
+}
