@@ -31,7 +31,7 @@ const LoginPage = () => {
         <div className="auth_container">
             <div className="auht_form">
                 <h1>Login</h1>
-                <form>
+                <form className='animate__animated animate__fadeIn animate__faster'>
                     <div className="auth_inputBox">
                         <input type="text" name="username" id="inp_username" placeholder="Username" autoComplete="off" values={username} onChange={handleInputChange}/>
                     </div>

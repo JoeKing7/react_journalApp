@@ -44,7 +44,11 @@ main {
     margin-right: 10px;
     transition: color .3 ease;
     &:hover {
-        
-        color: darken($color: $light-orange, $amount: 10);
+      color: darken($color: $light-orange, $amount: 10);
     }
+}
+
+.btn-danger {
+    background-color: red;
+    color: white;    
 }
